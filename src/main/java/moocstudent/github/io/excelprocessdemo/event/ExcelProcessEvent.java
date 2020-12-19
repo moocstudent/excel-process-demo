@@ -4,6 +4,9 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import moocstudent.github.io.excelprocessdemo.model.ExcelInfo;
+
+import java.util.List;
 
 /**
  * @Author: zhangQi
@@ -13,12 +16,17 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class ExcelProcessEvent {
+public class ExcelProcessEvent{
+
+    private String num;
 
     private Integer alreadyInSize;
 
     private Boolean allOk;
 
+    private List<ExcelInfo> listNotValid;
+
 //    private Integer totalSize;
+
 
 }

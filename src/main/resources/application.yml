@@ -1,2 +1,8 @@
 server:
-  port: 80
+  port: 81
+
+spring:
+  r2dbc:
+    url: r2dbcs:mysql://127.0.0.1:3306/zq-excelinfo?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&useSSL=false&allowMultiQueries=true&useAffectedRows=false
+    username: root
+    password: changepassword
